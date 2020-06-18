@@ -1,6 +1,6 @@
 # Bachelor Degree Project
 
-In this Github repository one can find the code files that were modified or created from scratch for the Project. I will introduce each of the Matlab files (.m) on the following paragraphs, explaning which is the role of each of them. In case one of the files already existed, I will also specify which were the modifications done. 
+In this Github repository one can find the code files that were modified or created from scratch for the Project. I will introduce the respective Matlab files (.m) on the following paragraphs, explaning which is the role of each of them. In case one of the files already existed, I will also specify which were the modifications done. 
 
 ## Notes
 
