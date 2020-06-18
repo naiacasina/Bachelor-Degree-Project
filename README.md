@@ -10,7 +10,7 @@ In this Github repository one can find the code files that were modified or crea
 ## Content
 
 
-### GSM_Filter_all_elW.m (modified)
+### _GSM_Filter_all_elW.m_ (modified)
 
 **Description:** Main GSM filtering code: it takes the parameters of the selected filter, creates the folder where the filtered data will be placed and filters the artifact.
 
@@ -18,16 +18,16 @@ In this Github repository one can find the code files that were modified or crea
 
 **After**: The name of the folder changes automatically with each specific filter (and parameter) so that the data is not overwritten. This is translated to a possibility of applying several filters with several parameters at the same time. It has also been added the possibility to choose 4 electrodes (from phase E) and facilitate the analysis.
 
-### wiener.m (created)
+### _wiener.m_ (created)
 
 **Description:** The algorithm takes as arguments the signal x (which comes from the reference electrode: the raw signal of the artifact), d (the data of the electrode to analyze which contains the biological signal plus the artifact) and the order of the filter. After applying the Wiener algorithm it returns the coefficients h_w. These coefficients will be used to filter the data of the reference electrode through the filter() function. 
 
-### rls_filter.m (created)
+### _rls_filter.m_ (created)
 
 **Description:** The algorithm takes as arguments the signal x (which comes from the reference electrode: the raw signal of the artifact), d (the data of the electrode to analyze which contains the biological signal plus the artifact) and the algorithm parameters. After applying the RLS algorithm it returns the _filtered_GSM_data_ array.
 
 
-### plotpeaksraw.m (modified)
+### _plotpeaksraw.m_ (modified)
 
 **Description:** Main code for the plotting of the spikes.
 
@@ -43,7 +43,7 @@ In this Github repository one can find the code files that were modified or crea
 
 Moreover, it is possible to plot the spectrum of several data (before and after filtering) with its specific title (ph. S2 and E).
 
-### GSM_filter_getParam.m (modified)
+### _GSM_filter_getParam.m_ (modified)
 
 **Description:** This function obtains the parameters of the chosen algorithm from user input.
 
@@ -51,7 +51,7 @@ Moreover, it is possible to plot the spectrum of several data (before and after 
 
 **After**: It obtains the Wiener and RLS parameters: Filter type, sampling frequency, filter order (and forgetting factor for the RLS).
 
-### GSM_filter_elW.m (modified)
+### _GSM_filter_elW.m_ (modified)
 
 **Description:** This is the function responsible for making the call to the desired algorithm (with the parameters obtained with the previous function).
 
