@@ -9,22 +9,6 @@ In this Github repository one can find the code files that were modified or crea
 
 ## Content
 
-### GSM_filter_getParam.m (modified)
-
-**Description:** This function obtains the parameters of the chosen algorithm from user input.
-
-**Before**: It obtained the parameters for the Notch Filter: Type, sampling frequency., filter bandwidth and number of harmonics.
-
-**After**: It obtains the Wiener and RLS parameters: Filter type, sampling frequency, filter order (and forgetting factor for the RLS).
-
-### GSM_filter_elW.m (modified)
-
-**Description:** This is the function responsible for making the call to the desired algorithm (with the parameters obtained with the previous function).
-
-**Before**: The option was limited to the only filter available: Notch.
-
-**After**: Two more options were added. The one for the Wiener corresponds to $s==2$, and the one for the RLS $s==3$.
-
 
 ### GSM_Filter_all_elW.m (modified)
 
@@ -58,3 +42,19 @@ In this Github repository one can find the code files that were modified or crea
 - the forget factor (if filter = RLS). 
 
 Moreover, it is possible to plot the spectrum of several data (before and after filtering) with its specific title (ph. S2 and E).
+
+### GSM_filter_getParam.m (modified)
+
+**Description:** This function obtains the parameters of the chosen algorithm from user input.
+
+**Before**: It obtained the parameters for the Notch Filter: Type, sampling frequency., filter bandwidth and number of harmonics.
+
+**After**: It obtains the Wiener and RLS parameters: Filter type, sampling frequency, filter order (and forgetting factor for the RLS).
+
+### GSM_filter_elW.m (modified)
+
+**Description:** This is the function responsible for making the call to the desired algorithm (with the parameters obtained with the previous function).
+
+**Before**: The option was limited to the only filter available: Notch.
+
+**After**: Two more options were added. The one for the Wiener corresponds to $s==2$, and the one for the RLS $s==3$.
